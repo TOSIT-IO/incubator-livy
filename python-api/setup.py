@@ -40,13 +40,13 @@ requirements = [
 
 setup(
     name='livy-python-api',
-    version="0.8.0-incubating-SNAPSHOT",
+    version="0.8.0-incubating-TDP-0.1.0-SNAPSHOT",
     packages=["livy", "livy-tests"],
     package_dir={
         "": "src/main/python",
         "livy-tests": "src/test/python/livy-tests",
     },
-    url='https://github.com/apache/incubator-livy',
+    url='https://github.com/alliage-io/incubator-livy',
     author_email='user@livy.incubator.apache.org',
     license='Apache License, Version 2.0',
     description=DESCRIPTION,
@@ -55,5 +55,5 @@ setup(
     classifiers=CLASSIFIERS,
     install_requires=requirements,
     setup_requires=['pytest-runner', 'flake8'],
-    tests_require=['pytest']
+    tests_require=['pytest'],
 )
