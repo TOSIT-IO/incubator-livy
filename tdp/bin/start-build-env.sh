@@ -12,7 +12,7 @@ TDP_HOME="${TDP_HOME:=$(pwd)}"
 docker run --rm=true -t -i \
   -v "${TDP_HOME}:/tdp" \
   -w "/tdp" \
-  -v "${HOME}/.m2:/home/${USER_NAME}/.m2${V_OPTS:-}" \
+  -v "${HOME}/.m2:/home/builder/.m2${V_OPTS:-}" \
   -e "BUILDER_UID=${USER_ID}" \
   -e "BUILDER_GID=${GROUP_ID}" \
   --ulimit nofile=500000:500000 \
