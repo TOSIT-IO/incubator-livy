@@ -4,6 +4,10 @@ RUN apt-get -q update \
     && apt-get -q install -y --no-install-recommends \
     libkrb5-dev \
     python-dev \
+    python-pip \
+    python-pkg-resources \
+    python-setuptools \
+    python-wheel \
     python3-dev
 
 RUN pip2 install \
