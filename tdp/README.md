@@ -1,8 +1,6 @@
 # TDP Livy Notes
 
-The version `0.8.0-incubating-TDP-0.1.0-SNAPSHOT` of Apache Livy is based on the `master` branch of the [Apache repository](https://github.com/apache/incubator-livy/tree/master).
-
-The main purpose of this custom release is the support of Spark 3.2 that is used in TDP.
+The version `0.9.0-0.0` of Apache Livy is based on the `master` branch of the [Apache repository](https://github.com/apache/incubator-livy/tree/master) at commit `710c0784dae73aa7c5a6ce0bac264bcfdefd7681`.
 
 ## Build container
 
@@ -29,7 +27,7 @@ For more info, see [Start the container](https://github.com/TOSIT-IO/TDP/tree/ma
 cd incubator-livy
 # in order to create a create a new release adding thriftserver to an already published release
 # mvn clean package -DskipTests -P thriftserver '-Dassembly.name=apache-livy-${project.version}_${scala.binary.version}-bin-thrift'
-mvn clean package -DskipTests -P thriftserver
+mvn clean package -DskipTests -P thriftserver -P spark3 -P scala-2.12
 ```
 
 The command generates a `.zip` file of the release at `./assembly/target/apache-livy-0.8.0-incubating-TDP-0.1.0-SNAPSHOT-bin.zip`.
