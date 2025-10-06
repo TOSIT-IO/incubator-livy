@@ -1,6 +1,6 @@
 # TDP Livy Notes
 
-The version `0.9.0-1.0-SNAPSHOT` of Apache Livy is based on the `master` branch of the [Apache repository](https://github.com/apache/incubator-livy/tree/master) at commit `710c0784dae73aa7c5a6ce0bac264bcfdefd7681`.
+The version `0.9.0-1.0` of Apache Livy is based on the `master` branch of the [Apache repository](https://github.com/apache/incubator-livy/tree/master) at commit `710c0784dae73aa7c5a6ce0bac264bcfdefd7681`.
 
 ## Build container
 

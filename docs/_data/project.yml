@@ -16,6 +16,6 @@
 # Apache Project configurations
 #
 name: Apache Livy
-version: 0.9.0-1.0-SNAPSHOT
+version: 0.9.0-1.0
 
 podling: true
